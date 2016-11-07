@@ -1,0 +1,13 @@
+task julie {
+    println "Julie! Julie!"
+}
+
+task wednesday(dependsOn:julie) {
+    println 'Hump Day!'
+}
+
+task hear(dependsOn:wednesday){
+	doLast{
+	println "I know you hear me Julie!"
+	}
+}
